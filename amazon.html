@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>amazon</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </head>
+    <style>
+        *{
+            margin:0%;
+            font-family: Arial;
+            border: border-box;
+        }
+        .navbar{
+            background-color: black;
+            height: 50px;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        .nav-logo{
+            height: 50px;
+            width:100px;
+        }
+        .logo{
+             background-image: url(Amazon-Logo.png);
+             background-size: cover;
+             height: 50px;
+             width: 100%;
+        }
+        .border{
+            border: 2px solid transparent;
+        }
+        .border:hover{
+            border: 2px solid white;
+        }
+        .add-first{
+            color: #cccccc;
+            font-size: 0.85rem;
+            margin-left: 15px;
+        }
+        .add-second{
+            font-size: 1rem;
+            margin-left: 8px;
+        }
+        .add-icon{
+            display: flex;
+            align-items: center;
+        }
+        .nav-search{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: pink;
+            border-radius: 4px;
+        }
+        .search-select{
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+        .search-input{
+            width: 200px;
+            font-size: 1rem;
+        }
+        .search-icon{
+            width: 45px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            font-size: 1.2rem;
+            background-color: #febd68;
+        }
+
+    </style>
+    <body>
+        <hearder>
+            <div class="navbar ">
+                <div class="nav-logo border">
+                    <div class="logo"></div>
+                </div>
+                <div class="nav-address border">
+                    <p class="add-first">Deliver to</p>
+                    <div class="add-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <i class="fa-solid fa-phone"></i>
+                        <p clas="add-second">India</p>
+                    </div>
+                </div>
+            
+            <div class="nav-search border">
+                <select class="search-select">
+                    <option>All</option>
+                    <option>All department</option>
+                    <option>arts & crafts </option>
+                    <option>Automative</option>
+                    <option>baby</option>
+                    <option>books</option>
+                    <option>movies</option>
+                </select>
+                <input placeholder="Search Amazon" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div>
+
+
+            </div>
+        </div>
+        </hearder>
+    </body>
+</html>
