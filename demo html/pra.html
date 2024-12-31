@@ -1,62 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-    h1{
-        text-align: center;
-        color: brown;
+  <head>
+    <meta charset="utf-8">
+    <meta width="width-device-width">
+  </head>
+  <style>
+    .box {
+        width:150px;
+        height:150px;
+        font-size: 8em;
+        text-align:center;
+        border-radius: 15px;
     }
-    fieldset{
-        background-color: green;
+    .container{
+      display:flex;
+      border: 10px solid black;
+      height: 90vh;
+      align-items:column;
+      gap: 10px;
     }
-</style>
-<body>
-    <fieldset>
-    <form>
-        <h1>APPLIACTION FORM</h1>
-        <label for="name">NAME:</label>
-        <input type="text" placeholder="enter your name"><br>
-        <SELECT>
-            <optgroup label="usa">
-            <OPTION>SVCK</OPTION>
-            <OPTION>NARAYANA</OPTION>
-            <OPTION>VIGNAN</OPTION>
-        </optgroup>
-        </SELECT>
-        <input type="text" tabindex="2"/>
-        <input type="text" tabindex="1"/>
-        <input type="text" tabindex="3"/>
-        <input type="checkbox">
-        <label for="holiday-choice">choose your fabourite holiday:</label>
-        <input list="holidays-names" id="holiday-choice" name="holiday-choice"/>
-        <datalist id="holidays-names">
-            <option value="newyear">
-            <option value="ramzar">
-            <option value="sriramanavami">
-        </datalist>
-        <label>gamail</label>
-        <select type="gamail" aria-placeholder="enter your mail address">
-            <option>
-                tejanimmanapalliteja@gmail.com
-            </option>
-        </select>
-        <label>
-            <textarea  placeholder="text">address</textarea>
-        </label><br>
-        <label>choosefiles</label>
-        <input type="file"  id="files" name="files" multiple><br><br>
-         <input type="submit"><br>
-         <a href = "C:\Users\tejan\OneDrive\Pictures\bird-image.jpg"download>
-            <img 
-            src="https://th.bing.com/th/id/OIP.roeJGz3eeyhxK3XRQ0LxpQAAAA?rs=1&pid=ImgDetMain"
-            alt="images" width="105"
-            height="142">
-         </a>
-    </form>
-</fieldset>
-</body>
-</html>
+    #box1 {
+      background-color: hsla(243, 100%, 50%, 0.863);
+    }
+    #box2 {
+      background-color: red;
+    }
+    #box3 {
+      background-color: green;
+    }
+      *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+      }
+      .container2{
+        width:100%;
+        height:100vh;
+        background: #091836;    
+      }
+      .insta{
+        width:270px;
+        height:270px;
+       border-radius: 54px;
+       align-items: center;
+       justify-content: center;
+      background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #9b2e7f 62%, #9b36b7 85%, #515ecf);
+      display:flex;
+      }
+      .insta-inner{
+        width:200px;
+        height:200px;
+        border: 18px solid #fff;
+        border-radius:54px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+      .insta-inner2 {
+        width:100px;
+        height:100px;
+        border: 18px solid #fff;
+        border-radius: 50%;
+      }
+      .insta-inner::after{
+         content:"";
+         background:#fff;
+         width:22px;
+         height:22px;
+         border-radius:50%;
+         position:absolute;
+         top:15px;
+         right:15px;
+      }
+  </style>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">1</div>
+      <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    </div>
+    <div class="container1">
+      <div class="insta">
+        <div class="insta-inner">
+          <div class="insta-inner2"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html> 

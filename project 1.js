@@ -80,10 +80,10 @@ document.write(myAnswer+ "<br>")
    const banana="yellow";
    function fruit(){
     var x=100; //function scope
-    document.write(apple + "<br>") //global scope
+    document.write(apple + "<br>") 
     document.write(x + "<br>")
    }
-   fruit();
+   fruit();//global scope
    //_____block scope
    function sports(){
     if (10<20){
@@ -96,4 +96,11 @@ document.write(myAnswer+ "<br>")
     document.write(tennis + "<br>")
    }
    sports();
+   // any code after the return statement will not run
+   function padRow(name){
+    const test="Testing";
+    console.log("This Works!")
+    return test;
+    console.log("This works!")
+   }
  
